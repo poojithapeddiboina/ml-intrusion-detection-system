@@ -1,0 +1,4 @@
+import pandas as pd
+
+df = pd.read_csv("dataset.csv")
+df.sample(1000).to_csv("sample_dataset.csv", index=False)
